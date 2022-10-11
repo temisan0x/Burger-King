@@ -6,5 +6,19 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: bgColor;
+    background: $bgColor;
+
+    > div {
+        display: flex;
+        align-items: center;
+
+        > img {
+            width: 50px;
+        }
+
+        > a {
+            margin: 0 2rem;
+            color: $textColor;
+        }
+    }
 }
