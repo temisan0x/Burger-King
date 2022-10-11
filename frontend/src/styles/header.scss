@@ -1,32 +1,53 @@
 @import "./color.scss";
 
 nav {
-    height: 5rem;
-    padding: 2rem;
+  height: 5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $bgColor;
+
+  > div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: $bgColor;
 
-    > div {
-        display: flex;
-        align-items: center;
-
-        > img {
-            width: 50px;
-        }
-
-        > a {
-            margin: 0 2rem;
-            color: $textColor;
-            transition: color 0.3s ease-in-out;
-
-            &:hover::after {
-                content: "";
-                color:$hover;
-                font-size: 20px;
-                height: 5px;
-            }
-        }
+    > img {
+      width: 50px;
     }
+
+    > a {
+      margin: 0 2rem;
+      color: $textColor;
+      transition: color 0.3s ease-in-out;
+      font-weight: 600;
+
+      &:hover::after {
+        content: "";
+        color: $hover;
+        font-size: 20px;
+        height: 5px;
+      }
+
+      > svg {
+        font-size: 1.3rem;
+
+        &:hover::after {
+          content: "";
+          color: $hover;
+          font-size: 20px;
+          height: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    padding: 1rem;
+    > div > a {
+        margin: 0 0.5rem;
+    }
+  }
 }

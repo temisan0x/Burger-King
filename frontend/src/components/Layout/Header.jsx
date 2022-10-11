@@ -14,7 +14,7 @@ const Header = ({isAuthenticated}) => {
             <Link to="/">Home</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/about">About</Link>
-            <Link to="/cart">Cart <RiShoppingCartFill/></Link>
+            <Link to="/cart"><RiShoppingCartFill/></Link>
             <Link to={isAuthenticated ? "/me": "/login"}>
                 {isAuthenticated ? <FaUserAlt/> : <RiLoginCircleFill/>}
             </Link>
