@@ -1,1 +1,10 @@
-@import "./color.scss"
+@import "./color.scss";
+
+nav {
+    height: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: bgColor;
+}

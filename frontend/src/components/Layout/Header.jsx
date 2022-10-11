@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import {RiShoppingCartFill,RiLoginCircleFill} from "react-icons/ri"
-import {FaUserAlt} from "react-icons/fa"
+import {FaUserAlt} from "react-icons/fa";
+import "../../styles/header.scss"
 
 const Header = ({isAuthenticated}) => {
   return (
