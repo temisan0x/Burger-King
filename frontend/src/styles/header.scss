@@ -19,6 +19,14 @@ nav {
         > a {
             margin: 0 2rem;
             color: $textColor;
+            transition: color 0.3s ease-in-out;
+
+            &:hover::after {
+                content: "";
+                color:$hover;
+                font-size: 20px;
+                height: 5px;
+            }
         }
     }
 }
