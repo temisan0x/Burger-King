@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { options, optionTwo } from "../../util/motion";
+import Founder from "./Founder";
 
 const Home = () => {
   return (
-    <section className="home">
+   <>
+     <section className="home">
       <div>
         <motion.h1
           {...options}
@@ -21,6 +23,8 @@ const Home = () => {
       {...optionTwo}
       href="#menu">Explore menu</motion.a>
     </section>
+    <Founder/>
+   </>
   );
 };
 
