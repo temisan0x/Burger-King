@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { options, optionTwo } from "../../util/motion";
 import Founder from "./Founder";
+import Menu from "./Menu";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       href="#menu">Explore menu</motion.a>
     </section>
     <Founder/>
+    <Menu/>
    </>
   );
 };

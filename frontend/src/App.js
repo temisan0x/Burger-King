@@ -4,6 +4,7 @@ import Header from "./components/Layout/Header";
 import "./styles/app.scss";
 import "./styles/home.scss";
 import "./styles/founder.scss"
+import "./styles/menu.scss"
 
 function App() {
   return (

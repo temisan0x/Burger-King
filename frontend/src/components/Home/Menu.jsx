@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Menu = () => {
   return (
-    <div>Menu</div>
-  )
-}
+    <section id="menu">
+      <h2 className="menuHeader">Our Menu</h2>
+      <div></div>
+    </section>
+  );
+};
 
-export default Menu
+export default Menu;
