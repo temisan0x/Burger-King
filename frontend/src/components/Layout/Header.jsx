@@ -5,12 +5,16 @@ import {FaUserAlt} from "react-icons/fa";
 import "../../styles/header.scss";
 import {motion} from "framer-motion"
 
-const Header = ({isAuthenticated}) => {
+const Header = ({isAuthenticated = true}) => {
   return (
     <nav>
-        <div>
+        <motion.div
+        initial={{x:"-100%"}}
+        whileInView={{x:0}}
+        transition={{duration:0.3}}
+        >
            <img src=" https://cdn-icons-png.flaticon.com/512/5977/5977578.png" alt="burger king icon" />
-        </div>
+        </motion.div>
         <div>
             <Link to="/">Home</Link>
             <Link to="/contact">Contact</Link>
