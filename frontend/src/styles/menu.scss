@@ -6,15 +6,64 @@
   background: $textLight;
   // padding: 4rem;
   .menuHeader {
-    background: $secondaryColor;
+    background: $textDark;
     padding: 4rem;
     font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     color: $textWhite;
   }
-  > div {
+  > .menuCard {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    > .burgerCard {
+      max-width: 30%;
+      box-shadow: 0 0 10px $dark;
+      background: $textWhite;
+      border-radius: 20px 20px 0 0;
+
+      > div {
+        background: $secondaryColor;
+        display: flex;
+        align-items: center;
+        padding:2rem;
+        color: $textWhite;
+        height:4rem;
+      }
+      > main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        > img {
+          height: 15rem;
+          width: 100%;
+          object-fit: cover;
+        }
+        > h5 {
+          font-size: 1.5rem;
+          text-align: center;
+          padding-top: 1rem;
+          text-transform: capitalize;
+          letter-spacing: 2px;
+        } 
+        > p {
+          padding: 1rem 0;
+          font-size: 1rem;
+        }
+        > button {
+          margin: 1rem 0;
+          padding:10px 30px;
+          cursor: pointer;
+          background: $textDark;
+          color:$textWhite;
+          border: none;
+          border-radius:2px
+        }
+      }
+    }
   }
 }
