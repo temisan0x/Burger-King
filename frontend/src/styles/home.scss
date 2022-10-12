@@ -1,6 +1,75 @@
+@import "./color.scss";
+
 .home {
-    height:100vh;
-    > div {
-        
+  height: 100vh;
+  div {
+    padding-left: 8rem;
+    padding-top: 14rem;
+    position: relative;
+    z-index: 1;
+
+    > h1 {
+      font-size: 5.5rem;
+      text-transform: uppercase;
+      color: $textDark;
+      text-shadow: 0 0 5px $textLight;
     }
+    > p {
+      font-size: 2rem;
+      color: $textDark;
+      text-shadow: 0 0 2px $textLight;
+    }
+  }
+  > a {
+    box-shadow: 0 0 0 black;
+    position: relative;
+    z-index: 1;
+    margin:1.8rem 8rem;
+    display: block;
+    width:10rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    color:$textDark;
+    border: 2px solid $textDark;
+    font-weight: bold;
+    font-size: 17px;
+    &:hover{
+        background: $btnHoverColor;
+        box-shadow: 0 0 0 4px rgba(0,0,0,0.1);
+    }
+  }
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("https://images.pexels.com/photos/551991/pexels-photo-551991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+ .home {
+   div {
+    text-align: center;
+    padding-top:10rem;
+    padding-left: 0rem;
+
+    > h1 {
+      font-size: 3rem;
+    }
+
+    > p {
+      font-size: 1.5rem;
+      margin: 20px;
+    }
+   }
+   > a {
+    margin: 10px auto;
+   }
+ }
 }
