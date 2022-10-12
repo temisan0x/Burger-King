@@ -5,7 +5,7 @@
   overflow-x: hidden;
   div {
     padding-left: 8rem;
-    padding-top: 14rem;
+    padding-top: 10rem;
     position: relative;
     z-index: 1;
 
@@ -35,6 +35,7 @@
     border: 2px solid $textWhite;
     font-weight: bold;
     font-size: 17px;
+    text-shadow: 0 0 2px $textDark;
     &:hover{
         background: $btnHoverColor;
         box-shadow: 0 0 0 4px rgba(0,0,0,0.1);

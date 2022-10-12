@@ -1,24 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { options, optionTwo } from "../../util/motion";
 
 const Home = () => {
-  const spring = {
-    type: "spring",
-    damping: 10,
-    stiffness: 100,
-  };
-
-  const options = {
-    initial: {
-      x: "-100%",
-      opacity: 0,
-    },
-    whileInView: {
-      x: 0,
-      opacity: 1,
-    },
-    transition:spring
-  }
   return (
     <section className="home">
       <div>
@@ -33,7 +17,9 @@ const Home = () => {
           Give yourself a tasty burger.
         </motion.p>
       </div>
-      <a href="#menu">Explore menu</a>
+      <motion.a
+      {...optionTwo}
+      href="#menu">Explore menu</motion.a>
     </section>
   );
 };
