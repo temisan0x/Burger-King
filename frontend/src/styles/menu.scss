@@ -28,7 +28,7 @@
       margin: 15px 0;
       &:hover {
         box-shadow: 0 0 10px $dark;
-        transition:0.3s ease-in;
+        transition: 0.3s ease-in;
       }
 
       > div {
@@ -68,7 +68,7 @@
           background: $textDark;
           color: $textWhite;
           border: none;
-          border-radius: 2px;
+          border-radius: 5px;
           &:hover {
             background: $btnHoverColor;
             transition: all 0.2s ease-in-out;
@@ -83,12 +83,37 @@
 
 @media screen and (max-width: 900px) {
   #menu {
+    .menuHeader {
+      font-size: 2.5rem;
+    }
     .menuCard {
       flex-direction: column;
 
       .burgerCard {
         width: 50%;
         margin: 1rem auto;
+        main {
+          h5 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #menu {
+    .menuCard {
+      flex-direction: column;
+
+      .burgerCard {
+        width: 60%;
+        main {
+          h5 {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }

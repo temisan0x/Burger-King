@@ -1,13 +1,12 @@
 @import "color.scss";
 
 footer {
-  min-height: 100px;
+  min-height: 300px;
   background: $textDark;
-  padding: 1rem;
+  padding: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: $textWhite;
-  align-items: center;
 
   div {
 
@@ -46,6 +45,22 @@ footer {
 
     div {
     text-align: center;
+
+    p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+    }
+    aside {
+  
+      a {
+        margin: 0.5rem;
+        color: $textWhite;
+        font-size: 15px;
+      }
+      &:hover {
+        color: $textLight;
+      }
     }
   }
 }

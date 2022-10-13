@@ -1,0 +1,17 @@
+@import "color.scss";
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+    >form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        border: 1px solid $textDark;
+        width: 40%;
+        height: 80%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
