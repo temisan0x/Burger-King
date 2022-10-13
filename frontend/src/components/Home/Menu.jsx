@@ -6,7 +6,7 @@ import Burger3 from "../../assets/burger3.jpg"
 import Burger4 from "../../assets/burger4.jpg"
 
 const Menu = () => {
-  const addToCartHandler = () => {}
+  const addToCartHandler = () => {};
   return (
     <section id="menu">
       <h2 className="menuHeader">Our Menu</h2>
@@ -17,6 +17,7 @@ const Menu = () => {
           price={200}
           itemNum={1}
           handler={addToCartHandler}
+          delay={0.2}
         />
          <MenuCard
           title={"Sausage Burger"}
@@ -24,6 +25,7 @@ const Menu = () => {
           price={200}
           itemNum={1}
           handler={addToCartHandler}
+          delay={0.5}
         />
          <MenuCard
           title={"Vegetable Burger"}
@@ -31,6 +33,7 @@ const Menu = () => {
           price={200}
           itemNum={1}
           handler={addToCartHandler}
+          delay={0.7}
         />
          <MenuCard
           title={"Cheese Burger"}
@@ -38,8 +41,9 @@ const Menu = () => {
           price={200}
           itemNum={1}
           handler={addToCartHandler}
+          delay={0.9}
         />
-      </div>
+      </div> 
     </section>
   );
 };
