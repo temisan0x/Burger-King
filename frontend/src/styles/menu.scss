@@ -12,6 +12,7 @@
     font-weight: bold;
     text-align: center;
     color: $textWhite;
+    margin-bottom: 40px;
   }
   > .menuCard {
     display: flex;
@@ -19,18 +20,23 @@
     flex-wrap: wrap;
 
     > .burgerCard {
-      max-width: 30%;
-      box-shadow: 0 0 10px $dark;
+      width: 30%;
       background: $textWhite;
-      border-radius: 20px 20px 0 0;
+      border-radius: 10px 10px 0 0;
+      overflow: hidden;
+      margin: 15px 0;
+      &:hover {
+        box-shadow: 0 0 10px $dark;
+        transition:0.3s ease-in;
+      }
 
       > div {
         background: $secondaryColor;
         display: flex;
         align-items: center;
-        padding:2rem;
+        padding: 2rem;
         color: $textWhite;
-        height:4rem;
+        height: 4rem;
       }
       > main {
         display: flex;
@@ -49,26 +55,39 @@
           padding-top: 1rem;
           text-transform: capitalize;
           letter-spacing: 2px;
-        } 
+        }
         > p {
           padding: 1rem 0;
           font-size: 1rem;
         }
         > button {
           margin: 1rem 0;
-          padding:10px 30px;
+          padding: 10px 30px;
           cursor: pointer;
           background: $textDark;
-          color:$textWhite;
+          color: $textWhite;
           border: none;
-          border-radius:2px;
+          border-radius: 2px;
           &:hover {
             background: $btnHoverColor;
-            transition: all .2s ease-in-out;
+            transition: all 0.2s ease-in-out;
             border: 1px solid $textDark;
-            color:$textDark;
+            color: $textDark;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #menu {
+    .menuCard {
+      flex-direction: column;
+
+      .burgerCard {
+        width: 50%;
+        margin: 1rem auto;
       }
     }
   }
