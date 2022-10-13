@@ -31,7 +31,7 @@
       }
 
       > div {
-        background: $secondaryColor;
+        background: $textDark;
         display: flex;
         align-items: center;
         padding: 2rem;
@@ -52,7 +52,7 @@
         > h5 {
           font-size: 1.5rem;
           text-align: center;
-          padding-top: 1rem;
+          padding: 1rem;
           text-transform: capitalize;
           letter-spacing: 2px;
         }
