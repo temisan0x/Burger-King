@@ -1,17 +1,61 @@
 @import "color.scss";
 
 .contact {
-    height: 100vh;
-    width: 100vw;
-    >form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        border: 1px solid $textDark;
-        width: 40%;
-        height: 80%;
-        justify-content: center;
-        flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  background: url("../assets/contactbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 40%;
+    height: 80%;
+    justify-content: center;
+    background: $textWhite;
+    > h2 {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin: 2rem 0;
     }
+    > input,
+    > textarea,
+    > button {
+      padding: 1rem 0;
+      outline: none;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom: 1px solid $textDark;
+      margin: 0.5rem;
+      width: 60%;
+      resize: none;
+    }
+    .no-outline:focus {
+      outline: none;
+    }
+    > button {
+      border: none;
+      background: $textDark;
+      cursor: pointer;
+      color: $textWhite;
+
+      &:hover {
+        background: $hover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 80%;
+  }
 }

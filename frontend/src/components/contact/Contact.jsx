@@ -8,9 +8,10 @@ const Contact = () => {
             <h2>Contact Us</h2>
             <input type="text" placeholder='Name'/>
             <input type="email" placeholder='Email' />
-            <textarea placeholder='Message...' cols="30" rows="10"></textarea>
+            <textarea placeholder='Message...'></textarea>
             <button type='submit'>Send</button>
         </motion.form>
+        
     </section>
   )
 }
