@@ -1,19 +1,27 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
+import { options } from "../../util/motion";
 
 const Contact = () => {
   return (
-    <section className='contact'>
-        <motion.form>
-            <h2>Contact Us</h2>
-            <input type="text" placeholder='Name'/>
-            <input type="email" placeholder='Email' />
-            <textarea placeholder='Message...'></textarea>
-            <button type='submit'>Send</button>
-        </motion.form>
-        
+    <section className="contact">
+      <motion.form {...options}>
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message..."></textarea>
+        <button type="submit">Send</button>
+      <motion.div
+      className="formBorder"
+      >
+        <img
+          src=" https://cdn-icons-png.flaticon.com/512/5977/5977578.png"
+          alt="burger king icon"
+        />
+      </motion.div>
+      </motion.form>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

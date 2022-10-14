@@ -10,12 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   > form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
     width: 40%;
     height: 80%;
     justify-content: center;
@@ -46,16 +46,51 @@
       background: $textDark;
       cursor: pointer;
       color: $textWhite;
+      font-size: 15px;
 
       &:hover {
         background: $hover;
+        transition: 0.3s ease-in-out;
+      }
+    }
+    > div {
+      position: absolute;
+      top: 50%;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.566));
+      right: -32px;
+
+      img {
+        width: 50px;
       }
     }
   }
 }
 
-@media screen and (max-width: 600px) {
-  .form {
-    width: 80%;
+@media screen and (max-width: 1180px) {
+  .contact {
+    height: 85vh;
+    > form {
+      width: 45%;
+      margin-top: 80px;
+      padding: 0;
+      >h2{
+        margin: 0;
+      }
+      > input,
+      > textarea,
+      > button {
+        width: 75%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .contact {
+    height: 85vh;
+    > form {
+      width: 70%;
+    }
   }
 }

@@ -51,7 +51,7 @@ const Menu = () => {
           price={200}
           itemNum={5}
           handler={addToCartHandler}
-          delay={0.5}
+          delay={0.3}
         />
         <MenuCard
           title={"Cheese Burger"}
