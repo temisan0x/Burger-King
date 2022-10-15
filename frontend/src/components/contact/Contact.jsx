@@ -12,7 +12,17 @@ const Contact = () => {
         <textarea placeholder="Message..."></textarea>
         <button type="submit">Send</button>
       <motion.div
-      className="formBorder"
+       initial={{
+        y: "-100vh",
+        opacity: 0,
+       }}
+       animate={{
+        y: "0",
+        opacity: 1
+       }}
+       transition={{
+        delay:1
+       }}
       >
         <img
           src=" https://cdn-icons-png.flaticon.com/512/5977/5977578.png"

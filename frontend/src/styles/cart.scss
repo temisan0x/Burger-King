@@ -1,0 +1,114 @@
+@import "color.scss";
+
+.cart {
+  background: $textLight;
+  width: 100%;
+  padding: 30px 0;
+
+  > main {
+    height: 100%;
+    max-width: 900px;
+    background: #e87a64;
+    padding: 2rem;
+    margin: auto;
+
+    > article {
+      padding: 2rem;
+      margin: 0 auto;
+      > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem 0 ;
+      }
+      > .checkout {
+        margin: 0 auto;
+        background: transparent;
+      > a {
+        background: $textDark;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        margin: 0 auto;
+      }
+      }
+    }
+  }
+}
+
+.cartItem {
+  background: #fcfafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+
+  > .cartDetails {
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+    > h4 {
+      letter-spacing: 1px;
+      text-align: start;
+    }
+    > img {
+      width: 150px;
+      object-fit: contain;
+      border-radius: 5%;
+    }
+    > input {
+      text-align: center;
+      width: 2rem;
+      height: 2rem;
+      padding: 0.5rem;
+      border: none;
+      margin: 0.25rem;
+      outline: none;
+      border-radius: 5px;
+      color: crimson;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0%;
+      }
+    }
+    > button {
+      padding: 0.5rem;
+      background: $textDark;
+      cursor: pointer;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart > main > article >{
+    .checkout  {
+      background: none;
+      > a{
+        width: 100%;
+        background: #fcfafa;
+        color: crimson;
+      }
+    }
+  }
+
+  .cartItem > .cartDetails  {
+    flex-direction: column;
+    > h4 {
+      margin-bottom: 15px;
+    }
+  }
+}
