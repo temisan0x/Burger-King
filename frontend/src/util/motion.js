@@ -39,4 +39,14 @@ export const optionThree = {
     x: 0,
     opacity: 1,
   },
+};
+
+export const optionFour = {
+  initial: {
+    y: "-100vh",
+  },
+  animate:{
+    y:0
+  },
+  transition: spring
 }
