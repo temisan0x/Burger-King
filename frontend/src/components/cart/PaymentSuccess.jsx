@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const PaymentSuccess = () => {
   return (
-    <section>
+    <section className='paymentSuccess'>
         <main>
             <h1>Order Confirmed</h1>
             <p>Order Placed Successfully, You can check your order below</p>
