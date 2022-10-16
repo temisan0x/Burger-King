@@ -4,10 +4,17 @@ import { motion } from "framer-motion";
 import Burger1 from "../../assets/burger1.jpg";
 import Burger2 from "../../assets/burger2.jpg";
 import Burger3 from "../../assets/burger3.jpg";
+import {optionThree} from "../../util/motion";
 
-const CartItem = ({ value, title, img, increment, decrement }) => {
+const CartItem = ({ value, title, img, increment, decrement, delay }) => {
   return (
-    <motion.div className="cartItem">
+    <motion.div 
+    className="cartItem"
+    {...optionThree}
+    transition={{
+      delay,
+    }}
+    >
       <div className="cartDetails">
         <h4>{title}</h4>
         <img src={img} alt="item" />
@@ -34,6 +41,7 @@ const Cart = () => {
           value={0}
           increment={() => increment(1)}
           decrement={() => decrement(1)}
+          delay={1}
         />
         <CartItem
           title={"Veg Cheese Burger"}
@@ -41,6 +49,7 @@ const Cart = () => {
           value={0}
           increment={() => increment(2)}
           decrement={() => decrement(2)}
+          delay={2}
         />
         <CartItem
           title={"Cheese Burger"}
@@ -48,6 +57,7 @@ const Cart = () => {
           value={0}
           increment={() => increment(3)}
           decrement={() => decrement(3)}
+          delay={3}
         />
         <article>
           <div>
@@ -59,7 +69,7 @@ const Cart = () => {
             <p>₦{2000 * 0.18}</p>
           </div>
           <div>
-            <h4>Transport Charges</h4>
+            <h4>T. Charges</h4>
             <p>₦{200}</p>
           </div>
           <div>
@@ -67,7 +77,7 @@ const Cart = () => {
             <p>₦{2000 + 200 * 0.18 + 200}</p>
           </div>
           <nav className="checkout">
-            <Link to="/shipping">Checkout</Link>
+            <Link to="/transport">Checkout</Link>
           </nav>
         </article>
       </main>
