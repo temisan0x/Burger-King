@@ -12,8 +12,10 @@ nav {
     display: flex;
     align-items: center;
 
-    > img {
-      width: 50px;
+    > a {
+      img {
+        width: 50px;
+      }
     }
 
     > a {

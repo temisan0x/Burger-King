@@ -1,13 +1,14 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import {FcGoogle} from "react-icons/fc"
+import { optionFour } from '../../util/motion';
 
 const Login = () => {
   return (
-    <section>
-        <motion.div>
+    <section className="login">
+        <motion.button {...optionFour}>
             Login with Google <FcGoogle/>
-        </motion.div>
+        </motion.button>
     </section>
   )
 }

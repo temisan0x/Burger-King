@@ -50,3 +50,27 @@ export const optionFour = {
   },
   transition: spring
 }
+
+export const animateFive = {
+  initial: {
+    y: "-100%",
+    opacity: 0,
+  },
+  animate:{
+    y:0,
+    opacity: 1,
+  },
+  transition: spring
+}
+
+export const animateSix = {
+  initial: {
+    x: "-100vw",
+    opacity: 0,
+  },
+  animate:{
+    x:0,
+    opacity: 1,
+  },
+  transition: spring
+}

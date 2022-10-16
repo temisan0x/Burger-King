@@ -5,7 +5,7 @@ import {FaUserAlt} from "react-icons/fa";
 import "../../styles/header.scss";
 import {motion} from "framer-motion"
 
-const Header = ({isAuthenticated = true}) => {
+const Header = ({isAuthenticated = false}) => {
   return (
     <nav>
         <motion.div
@@ -13,7 +13,7 @@ const Header = ({isAuthenticated = true}) => {
         whileInView={{x:0}}
         transition={{duration:0.3}}
         >
-           <img src=" https://cdn-icons-png.flaticon.com/512/5977/5977578.png" alt="burger king icon" />
+           <Link to="/"><img src=" https://cdn-icons-png.flaticon.com/512/5977/5977578.png" alt="burger king icon" /></Link>
         </motion.div>
         <div>
             <Link to="/">Home</Link>

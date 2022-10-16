@@ -1,0 +1,32 @@
+@import "color.scss";
+
+.login {
+  height: 60vh;
+  width: 100vw;
+  background: url("../assets/contactbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+
+  > button {
+    background: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.839);
+    }
+  }
+}

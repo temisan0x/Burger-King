@@ -1,0 +1,56 @@
+@import "color.scss";
+
+.tableClass {
+    background: $textLight;
+    width: 100%;
+    padding: 30px 0;
+  
+    > main {
+      height: 100%;
+      max-width: 900px;
+      background: #e87a64;
+      padding: 2rem;
+      margin: auto;
+      overflow-x: auto; 
+
+      > table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        >tr {
+            background: whitesmoke; 
+
+            &:first-child {
+                border-radius: 0 0 0 10px;
+            } &:last-child {
+                border-radius: 0 10px 0 0;
+                background: white;
+            }
+        }
+        td, th {
+            padding: 1rem;
+            font-weight: 400;
+        }
+
+        th {
+            background: whitesmoke;
+            &:first-child {
+                border-radius: 10px 0 0 0;
+            } &:last-child {
+                border-radius: 0 10px 0 0;
+            }
+        }
+
+        td {
+            color: $textLight;
+            color: rgba(0, 0, 0, 0.944);
+            font-weight: 400;
+            > a {
+                color: #000;
+            }
+        }
+      }
+    }
+
+
+}
