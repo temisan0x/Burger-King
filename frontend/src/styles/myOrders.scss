@@ -46,7 +46,11 @@
             color: rgba(0, 0, 0, 0.944);
             font-weight: 400;
             > a {
-                color: #000;
+                color: rgb(248, 248, 248);
+
+                > svg {
+                    font-size: 28px;
+                }
             }
         }
       }

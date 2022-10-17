@@ -28,7 +28,7 @@ const MyOrders = () => {
                 <td>₦{2236}</td>
                 <td>COD</td>
                 <td>
-                  <Link to={`/order/${"sam"}`}>
+                  <Link to={`/my-orders/${"sjdhsd"}`}>
                       <AiOutlineEye/>
                   </Link>
                 </td>
