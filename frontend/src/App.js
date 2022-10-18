@@ -11,6 +11,7 @@ import ConfirmOrder from "./components/cart/ConfirmOrder";
 import PaymentSuccess from "./components/cart/PaymentSuccess";
 import MyOrders from "./components/myOrders/MyOrders";
 import OrderDetails from "./components/myOrders/OrderDetails";
+import Dashboard from "./components/admin/Dashboard";
 
 import "./styles/app.scss";
 import "./styles/login.scss";
@@ -26,6 +27,7 @@ import "./styles/confirmOrder.scss";
 import "./styles/paymentSuccess.scss";
 import "./styles/myOrders.scss";
 import "./styles/orderDetails.scss";
+import "./styles/dashboard.scss";
 
 function App() {
   return (
@@ -42,6 +44,7 @@ function App() {
         <Route path="/payment-success" element={<PaymentSuccess/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/me" element={<Profile/>} />
+        <Route path="/admin/dashboard" element={<Dashboard/>} />
       </Routes>
       <Footer/>
     </Router>
