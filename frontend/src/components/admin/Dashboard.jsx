@@ -1,18 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Pie } from "react-chartjs-2";
+import { Chart as ChartJS, Tooltip, ArcElement, Legend } from "chart.js";
+
+ChartJS.register(Tooltip, ArcElement, Legend);
 
 const Box = ({ title, value }) => (
   <div>
     <h3>
-        {title === "Income" && "$"}
-        </h3>
-    <p>{value}</p>
+      {title === "Income" && "₦"}
+      {value}
+    </h3>
+    <p>{title}</p>
   </div>
 );
 
 const Dashboard = () => {
+  const data = {
+    labels: ["Preparing", "Transportation", "Delivered" ],
+    datasets: [
+      {
+        label: "# of orders",
+        data: [2, 3, 4],
+        backgroundColor: ["#FB923C", "#e5e7eb", "#94a3b8"],
+        borderColor: ["rgb(159, 63, 176)", "rgb(159, 63, 176)", "rgb(159, 0,50)"],
+        borderWidth: 1,
+      },
+    ],
+  };
+
   return (
-    <section>
+    <section className="dashboard">
       <main>
         <article>
           <Box title="Users" value={213} />
@@ -24,7 +42,9 @@ const Dashboard = () => {
             <Link to="/admin/orders">View Orders</Link>
             <Link to="/admin/users">View Users</Link>
           </div>
-          <aside></aside>
+          <aside>
+            <Pie data={data} />
+          </aside>
         </section>
       </main>
     </section>

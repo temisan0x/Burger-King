@@ -14,9 +14,9 @@ const Menu = () => {
       <h2 className="menuHeader">Our Menu</h2>
       <div className="menuCard">
         <MenuCard
-          title={"Sausage, Egg & Cheese Croissan'wich Meal Small"}
+          title={"Croissan'wich Burger"}
           burgerSrc={Burger1}
-          price={200}
+          price={1200}
           itemNum={1}
           handler={addToCartHandler}
           delay={0.2}
@@ -24,7 +24,7 @@ const Menu = () => {
          <MenuCard
           title={"Sausage Burger"}
           burgerSrc={Burger2}
-          price={200}
+          price={2000}
           itemNum={2}
           handler={addToCartHandler}
           delay={0.5}
@@ -32,7 +32,7 @@ const Menu = () => {
          <MenuCard
           title={"Vegetable Burger"}
           burgerSrc={Burger3}
-          price={200}
+          price={1000}
           itemNum={3}
           handler={addToCartHandler}
           delay={0.7}
@@ -40,23 +40,23 @@ const Menu = () => {
          <MenuCard
           title={"Cheese Burger"}
           burgerSrc={Burger4}
-          price={200}
+          price={1200}
           itemNum={4}
           handler={addToCartHandler}
           delay={0.2}
         />
         <MenuCard
-          title={"Cheese Burger"}
+          title={"Egg Burger"}
           burgerSrc={Burger5}
-          price={200}
+          price={2200}
           itemNum={5}
           handler={addToCartHandler}
           delay={0.3}
         />
         <MenuCard
-          title={"Cheese Burger"}
+          title={"Sausage Burger"}
           burgerSrc={Burger6}
-          price={200}
+          price={1200}
           itemNum={6}
           handler={addToCartHandler}
           delay={0.7}

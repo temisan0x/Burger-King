@@ -10,15 +10,17 @@
     z-index: 1;
 
     > h1 {
+      font-family: 'Sora', sans-serif;
       font-size: 6.5rem;
       text-transform: uppercase;
       color: $textWhite;
-      text-shadow: 0 0 5px $textDark;
+      text-shadow: 0 0 5px brown;
     }
     > p {
+      font-family: 'Sora', sans-serif;
       font-size: 3rem;
       color: $textWhite;
-      text-shadow: 0 0 2px $textDark;
+      text-shadow: 0 0 5px brown;
     }
   }
   > a {
@@ -34,7 +36,7 @@
     color:$textWhite;
     border: 2px solid $textWhite;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     text-shadow: 0 0 2px $textDark;
     &:hover{
         background: $btnHoverColor;
@@ -46,7 +48,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background: url("https://images.pexels.com/photos/4113503/pexels-photo-4113503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background: url("https://images3.alphacoders.com/215/21575.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

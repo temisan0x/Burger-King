@@ -6,6 +6,7 @@
   background: $textLight;
   // padding: 4rem;
   .menuHeader {
+    font-family: "Sora", sans-serif;
     background: $textDark;
     padding: 4rem;
     font-size: 3.5rem;
@@ -77,6 +78,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #menu {
+    .menuCard > .burgerCard > main > h5 {
+      font-size: 1.2rem;
     }
   }
 }
