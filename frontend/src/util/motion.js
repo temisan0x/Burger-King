@@ -74,3 +74,17 @@ export const animateSix = {
   },
   transition: spring
 }
+
+export const animateSeven = {
+  initial: {
+    opacity: 0,
+  },
+  animate:{
+    opacity: 1,
+  },
+  transition:{
+    ease: "linear",
+    repeat:"Infinity",
+    repeatType: "reverse"
+  }
+}

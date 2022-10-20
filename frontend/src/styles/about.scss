@@ -1,0 +1,125 @@
+@import "color.scss";
+
+.about {
+  width: 100%;
+  background: $textLight;
+  padding: 50px;
+
+  > main {
+    background: $textBg;
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+
+    > h1 {
+      font-weight: 400;
+      color: $textDark;
+      font-size: 3rem;
+      text-align: center;
+      background: $textWhite;
+      padding: 1rem 2rem;
+    }
+    > article {
+      margin: 2rem 0;
+      > h4 {
+        font-size: 2rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem 0;
+      }
+      > p {
+        letter-spacing: 3px;
+        padding: 1rem;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        word-wrap: 3px;
+      }
+
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: #000;
+        font-size: 1.5rem;
+        background: #fff;
+        border-radius: 100%;
+        transition: all 0.3s;
+        margin:1rem auto;
+        &:hover {
+          color: $textDark;
+          transform: scale(1.1);
+        }
+      }
+    }
+    > div {
+      background: $textBg;
+      color: #000;
+
+      > h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $textDark;
+        font-size: 3rem;
+        text-align: center;
+        background: $textWhite;
+        padding: 1rem 2rem;
+      }
+      > article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > div {
+          margin: 2rem;
+          display: flex;
+          flex-direction: column;
+          > img {
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+          }
+          > h3 {
+            margin: 1rem;
+            font-weight: 400;
+          }
+        }
+        > p {
+          margin: 0 1rem;
+          width: 50%;
+          letter-spacing: 2px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 20px 0;
+  }
+
+  .about > main > div > article > div {
+    margin: 0rem;
+  }
+
+  .about > main > h1,
+  .about > main > div > h2 {
+    font-size: 2rem;
+  }
+
+  .about > main > article > p,
+  .about > main > div > article > p {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about > main > div > article {
+    flex-direction: column;
+  }
+  
+}

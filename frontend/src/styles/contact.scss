@@ -3,14 +3,15 @@
 .contact {
   height: 100vh;
   width: 100vw;
-  background: url("../assets/contactbg.jpg");
+  // background: url("../assets/contactbg.jpg");
+  background:$textLight;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 20px;
 
   > form {
     display: flex;
@@ -18,11 +19,13 @@
     align-items: center;
     width: 40%;
     height: 80%;
-    justify-content: center;
-    background: $textWhite;
+    justify-content: center;    
+    background: #e87a64;
     > h2 {
+      color: $textWhite;
       font-family: 'Sora', sans-serif;
       font-size: 1.5rem;
+      font-weight: 400;
       text-transform: uppercase;
       margin: 2rem 0;
     }
@@ -34,10 +37,12 @@
       border-top-style: hidden;
       border-right-style: hidden;
       border-left-style: hidden;
-      border-bottom: 1px solid $textDark;
+      border-bottom: 1px solid $textWhite;
       margin: 0.5rem;
       width: 60%;
       resize: none;
+      background:transparent;
+      color:#fff;
     }
     .no-outline:focus {
       outline: none;
@@ -91,7 +96,7 @@
   .contact {
     height: 85vh;
     > form {
-      width: 70%;
+      width: 93%;
     }
   }
 }

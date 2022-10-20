@@ -13,56 +13,102 @@
     margin: auto;
 
     > article {
-        background: $textWhite;
-        padding:2rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 5px 5px 0px 0px;
+      background: $textWhite;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 5px 5px 0px 0px;
 
-        > div {
-            background: $textBg;
-            height:120px;
-            width:120px;
-            border-radius: 100%;
-            text-align: center;
-            padding: 2rem 0;
-            color: $textWhite;
-            > h3 {
-                font-family: 'Sora', sans-serif;
-                font-size: 2rem;
-                font-weight: 500;
-            }
-            > p {
-                font-weight: 100;
-                font-size: 1.1rem;
-            }
+      > div {
+        background: $textBg;
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        text-align: center;
+        padding: 2rem 0;
+        color: $textWhite;
+        > h3 {
+          font-family: "Sora", sans-serif;
+          font-size: 2rem;
+          font-weight: 500;
         }
+        > p {
+          font-weight: 100;
+          font-size: 1.1rem;
+        }
+      }
     }
     > section {
+      display: flex;
+      justify-content: space-between;
+      padding: 6rem;
+      > div {
         display: flex;
-        justify-content: space-between;
-        padding: 6rem;
-        > div {
-            display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        > a {
+          white-space: nowrap;
+          background: $textWhite;
+          color: $textBg;
+          padding: 1rem;
+          width: 50%;
+          text-align: center;
+          border-radius: 5px;
+          margin: 1rem;
+          &:hover {
+            background: $textLight;
+          }
+        }
+      }
+      > aside {
+        width: 50%;
+        > canvas {
+            width: max-content;
+            height:max-content;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dashboard {
+    // height: 100vmin;
+    > main {
+        > section {
             flex-direction: column;
-            width: 50%;
-            justify-content: center;
-            align-items: center;
-            > a {
-                white-space: nowrap;
-                background: $textWhite;
-                color: $textBg;
-                padding: 1rem;
-                width: 50%;
-                text-align: center;
-                border-radius: 5px;
-                margin: 1rem;
-                &:hover {
-                    background: $textLight;
-                }
+            > div {
+                width: 100%;
+                margin: 1rem 0;
+            }
+            > aside {
+                width: 100%;
             }
         }
     }
-  } 
+  }
 }
+
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+      height: unset ;
+      min-height: 100vh;
+      main {
+        > article {
+          flex-direction: column;
+          > div {
+            margin: 0.3rem;
+          }
+        }
+        > section {
+            > aside {
+                width: 100%;
+            }
+        }   
+      }
+    }
+  }

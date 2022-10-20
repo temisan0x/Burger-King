@@ -1,14 +1,80 @@
+@import "color";
+
 * {
-    padding: 0%;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    max-width: 1500px;
-    margin: 0 auto;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Sora&display=swap');
+.notFound {
+  background: $textLight;
+  width: 100%;
+  height: 80vh;
+  padding: 30px 0;
+
+  > main {
+    height: 100%;
+    max-width: 900px;
+    background: #e87a64;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    > div {
+      display: flex;
+      align-items: center;
+      margin: 92px 0 0 0;
+      > svg {
+        font-size: 4rem;
+      }
+      > h1 {
+        text-transform: uppercase;
+        align-items: center;
+        font-size:5rem;
+        font-weight: 100;
+      }
+    }
+    > p {
+        margin: 1rem;
+        text-align: center;
+        font-size: 20px;
+    }
+    > a {
+        background: $textWhite;
+        color: black;
+        padding: 0.7rem 1rem;
+        margin: 1rem;
+        text-align: center;
+    }
+  }
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    >svg {
+        font-size: 15rem;
+        color:#e87a64;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.4;
+    }
+    >div {
+        font-size: 2rem;
+    }
+}   
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Sora&display=swap");

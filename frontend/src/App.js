@@ -6,12 +6,16 @@ import Contact from "./components/contact/Contact";
 import Cart from "./components/cart/Cart";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import NotFound from "./components/layout/NotFound";
 import Transport from "./components/cart/Transport";
 import ConfirmOrder from "./components/cart/ConfirmOrder";
 import PaymentSuccess from "./components/cart/PaymentSuccess";
 import MyOrders from "./components/myOrders/MyOrders";
 import OrderDetails from "./components/myOrders/OrderDetails";
 import Dashboard from "./components/admin/Dashboard";
+import Users from "./components/admin/Users";
+import Orders from "./components/admin/Orders";
+import About from "./components/about/About";
 
 import "./styles/app.scss";
 import "./styles/login.scss";
@@ -25,9 +29,10 @@ import "./styles/cart.scss";
 import "./styles/transport.scss";
 import "./styles/confirmOrder.scss";
 import "./styles/paymentSuccess.scss";
-import "./styles/myOrders.scss";
+import "./styles/tableClass.scss";
 import "./styles/orderDetails.scss";
 import "./styles/dashboard.scss";
+import "./styles/about.scss";
 
 function App() {
   return (
@@ -45,6 +50,10 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/me" element={<Profile/>} />
         <Route path="/admin/dashboard" element={<Dashboard/>} />
+        <Route path="/admin/users" element={<Users/>} />
+        <Route path="/admin/orders" element={<Orders/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>
     </Router>
