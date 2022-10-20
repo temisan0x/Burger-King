@@ -4,6 +4,7 @@ import { RiShoppingCartFill, RiLoginCircleFill } from "react-icons/ri";
 import { FaUserAlt } from "react-icons/fa";
 import "../../styles/header.scss";
 import { motion } from "framer-motion";
+import BurgerIcon from "../../assets/burger-icon.png"
 
 const Header = ({ isAuthenticated = false }) => {
   return (
@@ -15,7 +16,7 @@ const Header = ({ isAuthenticated = false }) => {
       >
         <Link to="/">
           <img
-            src=" https://cdn-icons-png.flaticon.com/512/5977/5977578.png"
+            src={BurgerIcon}
             alt="burger king icon"
           />
         </Link>

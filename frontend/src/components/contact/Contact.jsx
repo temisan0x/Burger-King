@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { options } from "../../util/motion";
+import BurgerIcon from "../../assets/burger-icon.png"
 
 const Contact = () => {
   return (
@@ -25,7 +26,7 @@ const Contact = () => {
        }}
       >
         <img
-          src=" https://cdn-icons-png.flaticon.com/512/5977/5977578.png"
+          src={BurgerIcon}
           alt="burger king icon"
         />
       </motion.div>

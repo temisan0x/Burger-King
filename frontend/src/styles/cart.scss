@@ -59,12 +59,17 @@
     > h4 {
       letter-spacing: 1px;
       text-align: start;
-      font-weight: 100;
+      font-weight: 400;
     }
     > img {
       width: 150px;
       object-fit: contain;
       border-radius: 5%;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     > input {
       text-align: center;
