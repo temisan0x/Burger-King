@@ -23,7 +23,7 @@ const About = () => {
           </Link>
         </article>
         <div>
-          <h2>Founder</h2>
+          <h1>Founder</h1>
           <article>
             <div>
               <img src={me} alt="founder" />
